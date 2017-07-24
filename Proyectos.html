@@ -12,6 +12,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<!--links slide -->
+        
+        <link rel="stylesheet" href="css%2520slade/main.css">
+        <link rel="stylesheet" href="css%2520slade/font.css">
+        <link rel="stylesheet" href="font.css">
+        <!--Link fuente -->
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        
+        
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-loading">
 
@@ -65,14 +77,39 @@
 											<div class="4u$"><span class="image fit"><img src="images/Clientes/18.png" alt=""></span></div>
 											<div class="4u"><span class="image fit"><img src="images/Clientes/16.png" alt=""></span></div>
 											<div class="4u"><span class="image fit"><img src="images/Clientes/10.png" alt=""></span></div>
-											<div class="4u$"><span class="image fit"><img src="images/Clientes/24.png" alt=""></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/Clientes/24.png" alt=""></span>
+											</div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/5.png" alt=""></span></div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/23.jpg" alt=""></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/Clientes/20.png" alt=""></span>
+											</div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/4.jpg" alt=""></span></div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/11.png" alt=""></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/Clientes/21.png" alt=""></span>
+											</div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/6.jpg" alt=""></span></div>
+											<div class="4u"><span class="image fit"><img src="images/Clientes/22.jpg" alt=""></span></div>
+											<div class="4u$"><span class="image fit"><img src="images/Clientes/13.png" alt=""></span>
+											</div>
 										</div>
 									</div>
 								
-								<div class="image main"><img src="images/plano.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
+								<div class="main1" class="image main">
+    
+    								<div class="slides">
+    
+        								<img src="images/NOTARIA2.jpg">
+    									<img src="images/officina.jpg">
+    									<img src="images/oficina2.jpg">
+    
+  									  </div>
+
+									</div>
+								
+								<!--<div class="image main"><img src="images/plano.jpg" alt="" /></div>-->
+								<!--<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
-							</section>
+							</section> -->
 
 					</div>
 
@@ -138,6 +175,37 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+    <!-- Scrips Sladeshow -->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js%20slade/jquery.slides.js"></script>
+    
+<script>
+        
+    $(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: false,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "fade",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+
+</script>
+			
 
 	</body>
 </html>
